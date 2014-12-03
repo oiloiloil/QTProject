@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="TestFIle">
+      <UniqueIdentifier>{552d2654-a39e-4ddb-8edf-12a66976a79b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandManager.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Root.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeParentCommand.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteComponentCommand.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="EditComponentCommand.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertAChildNodeCmd.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertAParentNodeCmd.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertASiblingNodeCmd.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="MindMapModel.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeOperation.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentFactory.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SetTestData.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="QTProject_UnitTesting.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdManager_Test.cpp">
+      <Filter>TestFIle</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandManager.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\Command.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\Component.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\Composite.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\Root.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\ChangeParentCommand.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\DeleteComponentCommand.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\EditComponentCommand.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\InsertAChildNodeCmd.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\InsertAParentNodeCmd.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\InsertASiblingNodeCmd.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="MindMapModel.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeOperation.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="MindMapModel_Test.cpp">
+      <Filter>TestFIle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QTProject\ComponentFactory.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="factoryTest.cpp">
+      <Filter>TestFIle</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeOperationTest.cpp">
+      <Filter>TestFIle</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeTest.cpp">
+      <Filter>TestFIle</Filter>
+    </ClCompile>
+    <ClCompile Include="rootTest.cpp">
+      <Filter>TestFIle</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="IntergrationTest.cpp">
+      <Filter>TestFIle</Filter>
+    </ClCompile>
+    <ClCompile Include="SetTestData.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

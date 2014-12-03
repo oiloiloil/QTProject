@@ -1,0 +1,41 @@
+﻿已經開始建置於 2014/12/3 上午 10:37:40。
+     1>節點 2 (Build 目標) 上的專案 "C:\Users\oil\Documents\Visual Studio 2013\Projects\QTProject\QTProject_UnitTesting\QTProject_UnitTesting.vcxproj"。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\gtest\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt IntergrationTest.cpp
+         IntergrationTest.cpp
+     1>c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\intergrationtest.cpp(80): warning C4002: 巨集 'EXPECT_TRUE' 的實質參數太多
+     1>c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\intergrationtest.cpp(81): warning C4002: 巨集 'EXPECT_TRUE' 的實質參數太多
+     1>c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\intergrationtest.cpp(88): warning C4002: 巨集 'EXPECT_TRUE' 的實質參數太多
+     1>c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\intergrationtest.cpp(89): warning C4002: 巨集 'EXPECT_TRUE' 的實質參數太多
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\oil\Documents\Visual Studio 2013\Projects\QTProject\Debug\QTProject_UnitTesting.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib C:\gtest\lib\gtestd.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\oil\Documents\Visual Studio 2013\Projects\QTProject\Debug\QTProject_UnitTesting.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\oil\Documents\Visual Studio 2013\Projects\QTProject\Debug\QTProject_UnitTesting.lib" /MACHINE:X86 Debug\ChangeParentCommand.obj
+         Debug\Command.obj
+         Debug\Component.obj
+         Debug\ComponentFactory.obj
+         Debug\Composite.obj
+         Debug\DeleteComponentCommand.obj
+         Debug\EditComponentCommand.obj
+         Debug\InsertAChildNodeCmd.obj
+         Debug\InsertAParentNodeCmd.obj
+         Debug\InsertASiblingNodeCmd.obj
+         Debug\Root.obj
+         Debug\cmdManager_Test.obj
+         Debug\CommandManager.obj
+         Debug\factoryTest.obj
+         Debug\IntergrationTest.obj
+         Debug\MindMapModel.obj
+         Debug\MindMapModel_Test.obj
+         Debug\Node.obj
+         Debug\NodeOperation.obj
+         Debug\nodeOperationTest.obj
+         Debug\nodeTest.obj
+         Debug\QTProject_UnitTesting.obj
+         Debug\rootTest.obj
+         Debug\SetTestData.obj
+         Debug\stdafx.obj
+         QTProject_UnitTesting.vcxproj -> C:\Users\oil\Documents\Visual Studio 2013\Projects\QTProject\Debug\QTProject_UnitTesting.exe
+     1>專案 "C:\Users\oil\Documents\Visual Studio 2013\Projects\QTProject\QTProject_UnitTesting\QTProject_UnitTesting.vcxproj" (Build 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:00.80
