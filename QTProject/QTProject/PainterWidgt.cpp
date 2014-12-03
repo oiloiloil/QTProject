@@ -61,3 +61,8 @@ void PainterWidgt::mousePressEvent(QMouseEvent *event) {
 		QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
 	//this->setText(msg);
 }
+
+void PainterWidgt::checkNodeSelect()
+{
+
+}
