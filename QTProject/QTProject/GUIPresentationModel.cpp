@@ -108,10 +108,13 @@ void GUIPresentationModel::editNode()
 
 void GUIPresentationModel::deleteNode()
 {
+	int y = 50;
 	int selectedNode = painterWidgt->getSelectedNode();
 	if (selectedNode != -1)
 	{
 		mapModel.editDeleteNode(selectedNode);
+		painterWidgt->getModel(mapModel);
+		painterWidgt->setNodeCoordinate(mapModel.returnRoot(), 50, y);
 		painterWidgt->update();
 	}
 	else
@@ -122,17 +125,71 @@ void GUIPresentationModel::deleteNode()
 
 void GUIPresentationModel::insertParentNode()
 {
+	int y = 50;
+	int selectedNode = painterWidgt->getSelectedNode();
+	if (selectedNode != -1)
+	{
+		QString text = QInputDialog::getText(NULL, "Input Dialog",
+			"Please input your root description",
+			QLineEdit::Normal, "your comment");
 
+		string description = text.toStdString();
+
+		mapModel.insertParentNode(selectedNode, mapModel.getGreatID() + 1, description);
+		painterWidgt->getModel(mapModel);
+		painterWidgt->setNodeCoordinate(mapModel.returnRoot(), 50, y);
+		painterWidgt->update();
+	}
+	else
+		QMessageBox::warning(NULL, "Warning",
+		QString::fromLocal8Bit("沒有選取node"),
+		QMessageBox::Yes, QMessageBox::Yes);
 }
 
 void GUIPresentationModel::insertChildNode()
 {
+	int y = 50;
+	int selectedNode = painterWidgt->getSelectedNode();
+	if (selectedNode != -1)
+	{
+		QString text = QInputDialog::getText(NULL, "Input Dialog",
+			"Please input your root description",
+			QLineEdit::Normal, "your comment");
 
+		string description = text.toStdString();
+
+		mapModel.insertChildNode(selectedNode, mapModel.getGreatID() + 1, description);
+		painterWidgt->getModel(mapModel);
+		painterWidgt->setNodeCoordinate(mapModel.returnRoot(), 50, y);
+		painterWidgt->update();
+	}
+	else
+		QMessageBox::warning(NULL, "Warning",
+		QString::fromLocal8Bit("沒有選取node"),
+		QMessageBox::Yes, QMessageBox::Yes);
 }
 
 void GUIPresentationModel::insertSiblingNode()
 {
+	int y = 50;
+	int selectedNode = painterWidgt->getSelectedNode();
+	if (selectedNode != -1)
+	{
+		QString text = QInputDialog::getText(NULL, "Input Dialog",
+			"Please input your root description",
+			QLineEdit::Normal, "your comment");
 
+		string description = text.toStdString();
+
+		mapModel.insertSiblingNode(selectedNode, mapModel.getGreatID() + 1, description);
+		painterWidgt->getModel(mapModel);
+		painterWidgt->setNodeCoordinate(mapModel.returnRoot(), 50, y);
+		painterWidgt->update();
+	}
+	else
+		QMessageBox::warning(NULL, "Warning",
+		QString::fromLocal8Bit("沒有選取node"),
+		QMessageBox::Yes, QMessageBox::Yes);
 }
 
 void GUIPresentationModel::showAboutMessage()

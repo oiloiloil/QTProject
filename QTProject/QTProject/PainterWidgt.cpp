@@ -120,9 +120,10 @@ void PainterWidgt::setNodeCoordinate(Component *node, int x, int &y)
 	{
 		temp = *i;
 		setNodeCoordinate(temp, x + 110, y);
-
-		y = y + 70;
+		if (temp->getNodeList().size() == 0)
+			y = y + 70;
 	}
+	
 }
 
 int PainterWidgt::getSelectedNode()

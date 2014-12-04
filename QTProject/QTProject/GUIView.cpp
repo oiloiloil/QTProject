@@ -38,8 +38,8 @@ GUIView::GUIView(int argc, char *argv[])
 	QAction *editAction = editMenu->addAction(QIcon("edit.jpg"), "Edit", &model, SLOT(editNode()));
 	QAction *deleteAction = editMenu->addAction(QIcon("delete.jpg"), "Delete", &model, SLOT(deleteNode()));
 	QAction *InsertChildAction = editMenu->addAction(QIcon("InsertChild.jpg"), "Insert a child", &model, SLOT(insertChildNode()));
-	QAction *InsertParentAction = editMenu->addAction(QIcon("InsertSibling.jpg"), "Insert a parent", &model, SLOT(insertSiblingNode()));
-	QAction *InsertSiblingAction = editMenu->addAction(QIcon("InsertParent.jpg"), "Insert a sibling", &model, SLOT(insertParentNode()));
+	QAction *InsertParentAction = editMenu->addAction(QIcon("InsertParent.jpg"), "Insert a parent", &model, SLOT(insertParentNode()));
+	QAction *InsertSiblingAction = editMenu->addAction(QIcon("InsertSibling.jpg"), "Insert a sibling", &model, SLOT(insertSiblingNode()));
 
 	//editAction->setEnabled(false);//選項無法按
 
@@ -60,8 +60,8 @@ GUIView::GUIView(int argc, char *argv[])
 	QAction *deleteAction_bar = toolBar->addAction(QIcon("delete.jpg"), "Delete", &model, SLOT(deleteNode()));
 	toolBar->addSeparator();
 	QAction *InsertChildAction_bar = toolBar->addAction(QIcon("InsertChild.jpg"), "Insert a child", &model, SLOT(insertChildNode()));
-	QAction *InsertParentAction_bar = toolBar->addAction(QIcon("InsertSibling.jpg"), "Insert a parent", &model, SLOT(insertSiblingNode()));
-	QAction *InsertSiblingAction_bar = toolBar->addAction(QIcon("InsertParent.jpg"), "Insert a sibling", &model, SLOT(insertParentNode()));
+	QAction *InsertParentAction_bar = toolBar->addAction(QIcon("InsertParent.jpg"), "Insert a parent", &model, SLOT(insertParentNode()));
+	QAction *InsertSiblingAction_bar = toolBar->addAction(QIcon("InsertSibling.jpg"), "Insert a sibling", &model, SLOT(insertSiblingNode()));
 	toolBar->addSeparator();
 
 	//editAction_bar->setDisabled(true);
