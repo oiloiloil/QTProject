@@ -27,25 +27,24 @@ GUIView::GUIView(int argc, char *argv[])
 
 	fileMenu->addAction(QIcon("create.jpg"), "Create a new mind map", &model, SLOT(getCreateMindMap()));
 	fileMenu->addAction(QIcon("open.jpg"), "Open a mind map", &model, SLOT(openFile()));
-	fileMenu->addAction(QIcon("save.jpg"), "Save a mind map");
+	fileMenu->addAction(QIcon("save.jpg"), "Save a mind map", &model, SLOT(saveFile()));
 	// 分隔線
 	fileMenu->addSeparator();
 	// 快捷鍵 Ctrl+X，動作連接至 QApplication 的 quit() 
 	fileMenu->addAction("Close", &app, SLOT(quit()));
 
-	QPushButton *button = new QPushButton(QIcon("edit.jpg"), "Edit");
-
 	QMenu *editMenu = new QMenu("&Edit");
 	
-	QAction *editAction = editMenu->addAction(QIcon("edit.jpg"), "Edit");
-	QAction *deleteAction = editMenu->addAction(QIcon("delete.jpg"), "Delete");
-	QAction *InsertChildAction = editMenu->addAction(QIcon("InsertChild.jpg"), "Insert a child");
-	QAction *InsertParentAction = editMenu->addAction(QIcon("InsertSibling.jpg"), "Insert a parent");
-	QAction *InsertSiblingAction = editMenu->addAction(QIcon("InsertParent.jpg"), "Insert a sibling");
-	editAction->setEnabled(false);//選項無法按
+	QAction *editAction = editMenu->addAction(QIcon("edit.jpg"), "Edit", &model, SLOT(editNode()));
+	QAction *deleteAction = editMenu->addAction(QIcon("delete.jpg"), "Delete", &model, SLOT(deleteNode()));
+	QAction *InsertChildAction = editMenu->addAction(QIcon("InsertChild.jpg"), "Insert a child", &model, SLOT(insertChildNode()));
+	QAction *InsertParentAction = editMenu->addAction(QIcon("InsertSibling.jpg"), "Insert a parent", &model, SLOT(insertSiblingNode()));
+	QAction *InsertSiblingAction = editMenu->addAction(QIcon("InsertParent.jpg"), "Insert a sibling", &model, SLOT(insertParentNode()));
 
-	QMenu *aboutMenu = new QMenu("&About");
-	aboutMenu->addAction("About");
+	//editAction->setEnabled(false);//選項無法按
+
+	QMenu *aboutMenu = new QMenu("&Help");
+	aboutMenu->addAction("About", &model, SLOT(showAboutMessage()));
 
 	mainWindow->menuBar()->addMenu(fileMenu);
 	mainWindow->menuBar()->addMenu(editMenu);
@@ -55,21 +54,17 @@ GUIView::GUIView(int argc, char *argv[])
 	QToolBar *toolBar = new QToolBar("QToolBar");
 	toolBar->addAction(QIcon("create.jpg"), "Create a new mind map", &model, SLOT(getCreateMindMap()));
 	toolBar->addAction(QIcon("open.jpg"), "Open a mind map", &model, SLOT(openFile()));
-	toolBar->addAction(QIcon("save.jpg"), "Save a mind map");
+	toolBar->addAction(QIcon("save.jpg"), "Save a mind map", &model, SLOT(saveFile()));
 	toolBar->addSeparator();
-	//toolBar->addAction(QIcon("edit.jpg"), "Edit");
-	//toolBar->addAction(QIcon("delete.jpg"), "Delete");
-	QAction *editAction_bar = toolBar->addAction(QIcon("edit.jpg"), "Edit");
-	QAction *deleteAction_bar = toolBar->addAction(QIcon("delete.jpg"), "Delete");
+	QAction *editAction_bar = toolBar->addAction(QIcon("edit.jpg"), "Edit", &model, SLOT(editNode()));
+	QAction *deleteAction_bar = toolBar->addAction(QIcon("delete.jpg"), "Delete", &model, SLOT(deleteNode()));
 	toolBar->addSeparator();
-	//toolBar->addAction(QIcon("InsertChild.jpg"), "Insert a child");
-	//toolBar->addAction(QIcon("InsertSibling.jpg"), "Insert a parent");
-	//toolBar->addAction(QIcon("InsertParent.jpg"), "Insert a sibling");
-	QAction *InsertChildAction_bar = toolBar->addAction(QIcon("InsertChild.jpg"), "Insert a child");
-	QAction *InsertParentAction_bar = toolBar->addAction(QIcon("InsertSibling.jpg"), "Insert a parent");
-	QAction *InsertSiblingAction_bar = toolBar->addAction(QIcon("InsertParent.jpg"), "Insert a sibling");
+	QAction *InsertChildAction_bar = toolBar->addAction(QIcon("InsertChild.jpg"), "Insert a child", &model, SLOT(insertChildNode()));
+	QAction *InsertParentAction_bar = toolBar->addAction(QIcon("InsertSibling.jpg"), "Insert a parent", &model, SLOT(insertSiblingNode()));
+	QAction *InsertSiblingAction_bar = toolBar->addAction(QIcon("InsertParent.jpg"), "Insert a sibling", &model, SLOT(insertParentNode()));
 	toolBar->addSeparator();
-	editAction_bar->setDisabled(true);
+
+	//editAction_bar->setDisabled(true);
 
 	mainWindow->addToolBar(toolBar);
 

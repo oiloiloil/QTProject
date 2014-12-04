@@ -62,3 +62,19 @@ bool Composite::isSelected()
 {
 	return status;
 }
+
+void Composite::setCoordinate(int x, int y)
+{
+	this->x = x;
+	this->y = y;
+}
+
+int Composite::getX()
+{
+	return x;
+}
+
+int Composite::getY()
+{
+	return y;
+}

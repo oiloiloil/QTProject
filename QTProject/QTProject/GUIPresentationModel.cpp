@@ -26,9 +26,10 @@ void GUIPresentationModel::showMessage()
 
 void GUIPresentationModel::getCreateMindMap()
 {
-	bool isOK;
+	bool isOK = false;
+	int y = 50;
 	QString text = QInputDialog::getText(NULL, "Input Dialog",
-		"Please input your description",
+		"Please input your root description",
 		QLineEdit::Normal, "your comment", &isOK);
 
 	string description = text.toStdString();
@@ -39,6 +40,7 @@ void GUIPresentationModel::getCreateMindMap()
 			QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
 	}
 	mapModel.createMinMap(description);
+	painterWidgt->setNodeCoordinate(mapModel.returnRoot(), 50, y);
 
 	painterWidgt->getModel(mapModel);
 	painterWidgt->rootExist(true);
@@ -47,6 +49,7 @@ void GUIPresentationModel::getCreateMindMap()
 
 void GUIPresentationModel::openFile()
 {
+	int y = 50;
 	try
 	{
 		bool isOK;
@@ -67,6 +70,7 @@ void GUIPresentationModel::openFile()
 
 			painterWidgt->getModel(mapModel);
 			painterWidgt->rootExist(true);
+			painterWidgt->setNodeCoordinate(mapModel.returnRoot(), 50, y);
 		}
 		else 
 			throw path;
@@ -87,10 +91,52 @@ void GUIPresentationModel::saveFile()
 
 void GUIPresentationModel::editNode()
 {
+	QString text = QInputDialog::getText(NULL, "Input Dialog",
+		"Please input your root description",
+		QLineEdit::Normal, "your comment");
+
+	string description = text.toStdString();
+	int selectedNode = painterWidgt->getSelectedNode();
+
+	if (selectedNode != -1)
+		mapModel.editNodeDescription(selectedNode, description);
+	else
+		QMessageBox::warning(NULL, "Warning",
+		QString::fromLocal8Bit("沒有選取node"),
+		QMessageBox::Yes, QMessageBox::Yes);
+}
+
+void GUIPresentationModel::deleteNode()
+{
+	int selectedNode = painterWidgt->getSelectedNode();
+	if (selectedNode != -1)
+	{
+		mapModel.editDeleteNode(selectedNode);
+		painterWidgt->update();
+	}
+	else
+		QMessageBox::warning(NULL, "Warning",
+		QString::fromLocal8Bit("沒有選取node"),
+		QMessageBox::Yes, QMessageBox::Yes);
+}
+
+void GUIPresentationModel::insertParentNode()
+{
 
 }
 
-void GUIPresentationModel::insertNode()
+void GUIPresentationModel::insertChildNode()
 {
 
+}
+
+void GUIPresentationModel::insertSiblingNode()
+{
+
+}
+
+void GUIPresentationModel::showAboutMessage()
+{
+	QMessageBox::about(NULL, "about", 
+		QString::fromLocal8Bit("ID = 103598031 \n name = 歐陽騰 \n course name = 資工碩一 \n application name = MindMap \n Version = ?"));
 }

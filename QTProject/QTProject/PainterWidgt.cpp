@@ -43,10 +43,15 @@ void PainterWidgt::paintEvent(QPaintEvent *event)
 
 			text = s2q(temp->getDescription());
 
-			painter.drawRect(x + 110 * j, y, w, h);
-			painter.drawText(QPoint(x + 110 * j + 15, y + 15), text);
+			if (temp->isSelected())
+				painter.setPen(QPen(Qt::red, 5));
+			else
+				painter.setPen(QPen(Qt::black, 4));
 
-			j++;
+
+			painter.drawRect(temp->getX(), temp->getY(), w, h);
+			painter.drawText(QPoint(temp->getX() + 15, temp->getY() + 15), text);
+
 		}
 	}
 }
@@ -55,14 +60,72 @@ void PainterWidgt::mousePressEvent(QMouseEvent *event) {
 	QString msg;
 	msg.sprintf("<center><h1>Press: (%d, %d)</h1></center>",
 		event->x(), event->y());
+	checkNodeSelect(event->x(), event->y());
 
 	QMessageBox::information(NULL, "Information",
-		"Your comment is: <b>" + msg + "</b>",
+		"Your nodeID is: <b>" + msg + "</b>",
 		QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
 	//this->setText(msg);
+	cout << selectedNode << endl;
 }
 
-void PainterWidgt::checkNodeSelect()
+void PainterWidgt::checkNodeSelect(int x, int y)
 {
+	Component *temp;
+	list <Component *> tempList;
+	list <Component *> resultList;
+	list <Component *>::iterator i;
+	int nodeX = 0, nodeY = 0;
+	if (isRootExist)
+	{
+		temp = mapModel.returnRoot();
+		tempList = temp->getNodeList();
+		resultList.push_back(temp);
+		mapModel.getNodeList(tempList, resultList);
 
+		//setSelected reset false
+		for (i = resultList.begin(); i != resultList.end(); ++i)
+		{
+			temp = *i;
+			temp->setSelected(false);
+		}
+
+		for (i = resultList.begin(); i != resultList.end(); ++i)
+		{
+			temp = *i;
+			nodeX = temp->getX();
+			nodeY = temp->getY();
+			if (x >= nodeX && y >= nodeY && x <= (nodeX + 80) && y <= (nodeY + 40))
+			{
+				temp->setSelected(true);
+				selectedNode = temp->getID();
+				break;
+			}
+			else
+				selectedNode = -1;
+		}
+	}
+}
+
+//遞迴給每個node加上X Y值
+void PainterWidgt::setNodeCoordinate(Component *node, int x, int &y)
+{
+	Component *temp;
+	list <Component *> tempList;
+	list <Component *>::iterator i;
+
+	node->setCoordinate(x, y);
+	tempList = node->getNodeList();
+	for (i = tempList.begin(); i != tempList.end(); ++i)
+	{
+		temp = *i;
+		setNodeCoordinate(temp, x + 110, y);
+
+		y = y + 70;
+	}
+}
+
+int PainterWidgt::getSelectedNode()
+{
+	return selectedNode;
 }

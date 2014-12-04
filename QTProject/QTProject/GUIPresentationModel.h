@@ -22,7 +22,11 @@ public slots :
 		void openFile();
 		void saveFile();
 		void editNode();
-		void insertNode();
+		void deleteNode();
+		void insertParentNode();
+		void insertChildNode();
+		void insertSiblingNode();
+		void showAboutMessage();
 signals:
 		void sendMessage(QString);
 

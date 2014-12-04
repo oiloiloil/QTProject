@@ -22,4 +22,7 @@ public:
 	virtual Component* getParent() = 0;
 	virtual void setSelected(bool status) = 0;
 	virtual bool isSelected() = 0;
+	virtual void setCoordinate(int x, int y) = 0;
+	virtual int getX() = 0;
+	virtual int getY() = 0;
 };
