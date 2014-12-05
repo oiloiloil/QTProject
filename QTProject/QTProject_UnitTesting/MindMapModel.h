@@ -58,4 +58,8 @@ public:
 	void saveMindMap();
 	void showMindMap();
 	void myDisplay(Component *node, string space);
+
+	void cutNode();
+	void copyNode(int nodeID);
+	void pasteNode();
 };

@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_GUIPresentationModel_t {
-    QByteArrayData data[13];
-    char stringdata[169];
+    QByteArrayData data[16];
+    char stringdata[202];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -41,13 +41,17 @@ QT_MOC_LITERAL(8, 90, 10),
 QT_MOC_LITERAL(9, 101, 16),
 QT_MOC_LITERAL(10, 118, 15),
 QT_MOC_LITERAL(11, 134, 17),
-QT_MOC_LITERAL(12, 152, 16)
+QT_MOC_LITERAL(12, 152, 16),
+QT_MOC_LITERAL(13, 169, 9),
+QT_MOC_LITERAL(14, 179, 10),
+QT_MOC_LITERAL(15, 190, 11)
     },
     "GUIPresentationModel\0sendMessage\0\0"
     "showMessage\0getCreateMindMap\0openFile\0"
     "saveFile\0editNode\0deleteNode\0"
     "insertParentNode\0insertChildNode\0"
-    "insertSiblingNode\0showAboutMessage"
+    "insertSiblingNode\0showAboutMessage\0"
+    "cutAction\0copyAction\0pasteAction"
 };
 #undef QT_MOC_LITERAL
 
@@ -57,7 +61,7 @@ static const uint qt_meta_data_GUIPresentationModel[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      11,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -65,24 +69,30 @@ static const uint qt_meta_data_GUIPresentationModel[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   69,    2, 0x06 /* Public */,
+       1,    1,   84,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       3,    0,   72,    2, 0x0a /* Public */,
-       4,    0,   73,    2, 0x0a /* Public */,
-       5,    0,   74,    2, 0x0a /* Public */,
-       6,    0,   75,    2, 0x0a /* Public */,
-       7,    0,   76,    2, 0x0a /* Public */,
-       8,    0,   77,    2, 0x0a /* Public */,
-       9,    0,   78,    2, 0x0a /* Public */,
-      10,    0,   79,    2, 0x0a /* Public */,
-      11,    0,   80,    2, 0x0a /* Public */,
-      12,    0,   81,    2, 0x0a /* Public */,
+       3,    0,   87,    2, 0x0a /* Public */,
+       4,    0,   88,    2, 0x0a /* Public */,
+       5,    0,   89,    2, 0x0a /* Public */,
+       6,    0,   90,    2, 0x0a /* Public */,
+       7,    0,   91,    2, 0x0a /* Public */,
+       8,    0,   92,    2, 0x0a /* Public */,
+       9,    0,   93,    2, 0x0a /* Public */,
+      10,    0,   94,    2, 0x0a /* Public */,
+      11,    0,   95,    2, 0x0a /* Public */,
+      12,    0,   96,    2, 0x0a /* Public */,
+      13,    0,   97,    2, 0x0a /* Public */,
+      14,    0,   98,    2, 0x0a /* Public */,
+      15,    0,   99,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString,    2,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -113,6 +123,9 @@ void GUIPresentationModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c,
         case 8: _t->insertChildNode(); break;
         case 9: _t->insertSiblingNode(); break;
         case 10: _t->showAboutMessage(); break;
+        case 11: _t->cutAction(); break;
+        case 12: _t->copyAction(); break;
+        case 13: _t->pasteAction(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -152,13 +165,13 @@ int GUIPresentationModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 11)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 11;
+        _id -= 14;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 11)
+        if (_id < 14)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 11;
+        _id -= 14;
     }
     return _id;
 }

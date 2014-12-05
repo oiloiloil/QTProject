@@ -36,6 +36,7 @@ void Composite::addParent(Component *node)
 void Composite::addSibling(Component *node)
 {
 	parent->addChild(node);
+	node->addParent(parent);
 }
 
 list<Component *> Composite::getNodeList()
@@ -77,4 +78,9 @@ int Composite::getX()
 int Composite::getY()
 {
 	return y;
+}
+
+Component* Composite::clone()
+{
+	return new Composite(*this);
 }

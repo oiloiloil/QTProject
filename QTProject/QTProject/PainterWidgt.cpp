@@ -62,10 +62,12 @@ void PainterWidgt::mousePressEvent(QMouseEvent *event) {
 		event->x(), event->y());
 	checkNodeSelect(event->x(), event->y());
 
+	/*
 	QMessageBox::information(NULL, "Information",
 		"Your nodeID is: <b>" + msg + "</b>",
 		QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
-	//this->setText(msg);
+	*/
+	update();
 	cout << selectedNode << endl;
 }
 

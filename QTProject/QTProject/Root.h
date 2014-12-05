@@ -18,4 +18,5 @@ public:
 	void addParent(Component *node);
 	void addSibling(Component *node);
 	void display();
+	Component* clone();
 };

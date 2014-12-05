@@ -29,4 +29,5 @@ public:
 	void setCoordinate(int x, int y);
 	int getX();
 	int getY();
+	Component* clone();
 };

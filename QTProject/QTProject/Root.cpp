@@ -40,3 +40,8 @@ void Root::display()
 	cout << ID;
 	cout << ")" << endl;
 }
+
+Component* Root::clone()
+{
+	return new Root(*this);
+}

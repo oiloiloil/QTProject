@@ -27,6 +27,9 @@ public slots :
 		void insertChildNode();
 		void insertSiblingNode();
 		void showAboutMessage();
+		void cutAction();
+		void copyAction();
+		void pasteAction();
 signals:
 		void sendMessage(QString);
 

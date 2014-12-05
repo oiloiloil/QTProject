@@ -11,6 +11,7 @@ private:
 
 public:
 	virtual int getID() = 0;
+	virtual void setID(int nodeID) = 0;
 	virtual string getDescription() = 0;
 	virtual void setDescription(string description);
 	virtual void addChild(Component *node);
@@ -25,4 +26,5 @@ public:
 	virtual void setCoordinate(int x, int y) = 0;
 	virtual int getX() = 0;
 	virtual int getY() = 0;
+	virtual Component* clone() = 0;
 };

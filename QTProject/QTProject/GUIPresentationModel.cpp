@@ -184,7 +184,7 @@ void GUIPresentationModel::insertSiblingNode()
 		mapModel.insertSiblingNode(selectedNode, mapModel.getGreatID() + 1, description);
 		painterWidgt->getModel(mapModel);
 		painterWidgt->setNodeCoordinate(mapModel.returnRoot(), 50, y);
-		painterWidgt->update();
+		//painterWidgt->update();
 	}
 	else
 		QMessageBox::warning(NULL, "Warning",
@@ -196,4 +196,40 @@ void GUIPresentationModel::showAboutMessage()
 {
 	QMessageBox::about(NULL, "about", 
 		QString::fromLocal8Bit("ID = 103598031 \n name = 歐陽騰 \n course name = 資工碩一 \n application name = MindMap \n Version = ?"));
+}
+
+void GUIPresentationModel::cutAction()
+{
+
+}
+
+void GUIPresentationModel::copyAction()
+{
+	int selectedNode = painterWidgt->getSelectedNode();
+	if (selectedNode != -1)
+	{
+		mapModel.copyNode(selectedNode);
+	}
+	else
+		QMessageBox::warning(NULL, "Warning",
+		QString::fromLocal8Bit("沒有選取node"),
+		QMessageBox::Yes, QMessageBox::Yes);
+	
+}
+
+void GUIPresentationModel::pasteAction()
+{
+	int y = 50;
+	int selectedNode = painterWidgt->getSelectedNode();
+	if (selectedNode != -1)
+	{
+		mapModel.pasteNode(selectedNode);
+		painterWidgt->getModel(mapModel);
+		painterWidgt->setNodeCoordinate(mapModel.returnRoot(), 50, y);
+		painterWidgt->update();
+	}
+	else
+		QMessageBox::warning(NULL, "Warning",
+		QString::fromLocal8Bit("沒有選取node"),
+		QMessageBox::Yes, QMessageBox::Yes);
 }

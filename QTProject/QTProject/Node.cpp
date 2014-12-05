@@ -46,3 +46,8 @@ void Node::display()
 	cout << ID;
 	cout << ")" << endl;
 }
+
+Component* Node::clone()
+{
+	return new Node(*this);
+}

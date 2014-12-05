@@ -71,9 +71,7 @@ TEST_F(IntergrationTest, testChangeNodeParent)
 	string path = "./testdata/test_file1.mm";
 	EXPECT_TRUE(mapModel.checkFileExist(path));
 	mapModel.readFile(path);
-	mapModel.showMindMap();
 	mapModel.editNodeParent(1, 6);
-	mapModel.showMindMap();
 	Component *node = mapModel.findTargetNode(1, mapModel.returnRoot());
 	Component *parent = node->getParent();
 
@@ -82,7 +80,6 @@ TEST_F(IntergrationTest, testChangeNodeParent)
 
 	
 	mapModel.didUndo();
-	mapModel.showMindMap();
 	node = mapModel.findTargetNode(6, mapModel.returnRoot());
 	parent = node->getParent();
 	EXPECT_TRUE("Windows", node->getParent()->getDescription());

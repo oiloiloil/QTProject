@@ -142,3 +142,20 @@ TEST_F(MindMapModel_Test, handleFileTest)
 {
 
 }
+
+TEST_F(MindMapModel_Test, cutTest)
+{
+
+}
+
+TEST_F(MindMapModel_Test, copyTest)
+{
+	mapModel.createMinMap("root");
+	mapModel.insertChildNode(0, 1, "child");
+	mapModel.copyNode(1);
+}
+
+TEST_F(MindMapModel_Test, pasteTest)
+{
+
+}

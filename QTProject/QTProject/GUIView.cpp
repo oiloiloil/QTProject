@@ -16,7 +16,7 @@ GUIView::GUIView(int argc, char *argv[])
 
 	QMainWindow *mainWindow = new QMainWindow;
 	mainWindow->setWindowTitle("QMainWindow");
-	mainWindow->resize(800, 800);
+	mainWindow->resize(1024, 1024);
 
 	mainWindow->setCentralWidget(painterWidgt);
 
@@ -40,6 +40,10 @@ GUIView::GUIView(int argc, char *argv[])
 	QAction *InsertChildAction = editMenu->addAction(QIcon("InsertChild.jpg"), "Insert a child", &model, SLOT(insertChildNode()));
 	QAction *InsertParentAction = editMenu->addAction(QIcon("InsertParent.jpg"), "Insert a parent", &model, SLOT(insertParentNode()));
 	QAction *InsertSiblingAction = editMenu->addAction(QIcon("InsertSibling.jpg"), "Insert a sibling", &model, SLOT(insertSiblingNode()));
+	editMenu->addSeparator();
+	QAction *cutAction = editMenu->addAction(QIcon("cut.jpg"), "cut", &model, SLOT(cutAction()));
+	QAction *copyAction = editMenu->addAction(QIcon("copy.jpg"), "copy", &model, SLOT(copyAction()));
+	QAction *pasteAction = editMenu->addAction(QIcon("paste.jpg"), "paste", &model, SLOT(pasteAction()));
 
 	//editAction->setEnabled(false);//選項無法按
 
@@ -63,6 +67,7 @@ GUIView::GUIView(int argc, char *argv[])
 	QAction *InsertParentAction_bar = toolBar->addAction(QIcon("InsertParent.jpg"), "Insert a parent", &model, SLOT(insertParentNode()));
 	QAction *InsertSiblingAction_bar = toolBar->addAction(QIcon("InsertSibling.jpg"), "Insert a sibling", &model, SLOT(insertSiblingNode()));
 	toolBar->addSeparator();
+	
 
 	//editAction_bar->setDisabled(true);
 

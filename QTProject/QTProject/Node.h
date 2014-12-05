@@ -21,4 +21,5 @@ public:
 	void addSibling(Component *node);
 	Component* getParent();
 	void display();
+	Component* clone();
 };

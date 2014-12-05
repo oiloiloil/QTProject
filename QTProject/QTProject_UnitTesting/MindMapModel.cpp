@@ -213,18 +213,12 @@ void MindMapModel::editDeleteNode(int nodeID)
 
 void MindMapModel::didRedo()
 {
-	if (cmdManager.redo())
-		;
-	else
-		cout << "error" << endl;
+	cmdManager.redo();
 }
 
 void MindMapModel::didUndo()
 {
-	if (cmdManager.undo())
-		;
-	else
-		cout << "error" << endl;
+	cmdManager.undo();
 }
 
 void MindMapModel::readFile(string path)
@@ -434,4 +428,22 @@ void MindMapModel::myDisplay(Component *node, string space)
 			myDisplay(temp, space);
 		}
 	}
+}
+
+void MindMapModel::cutNode()
+{
+
+}
+
+void MindMapModel::copyNode(int nodeID)
+{
+	Component *node = findTargetNode(nodeID, root);
+	Component *clone = node->clone();
+	cout << clone->getDescription();
+
+}
+
+void MindMapModel::pasteNode()
+{
+
 }
