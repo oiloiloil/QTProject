@@ -1,8 +1,34 @@
-﻿已經開始建置於 2014/12/4 下午 10:53:36。
+﻿已經開始建置於 2014/12/5 下午 08:10:33。
      1>節點 2 (Build 目標) 上的專案 "C:\Users\oil\Documents\GitHub\QTProject\QTProject\QTProject\QTProject.vcxproj"。
      1>ClCompile:
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.3.2\5.3\msvc2013\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.3.2\5.3\msvc2013\include\QtCore /IC:\Qt\Qt5.3.2\5.3\msvc2013\include\QtGui /IC:\Qt\Qt5.3.2\5.3\msvc2013\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GUIView.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.3.2\5.3\msvc2013\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.3.2\5.3\msvc2013\include\QtCore /IC:\Qt\Qt5.3.2\5.3\msvc2013\include\QtGui /IC:\Qt\Qt5.3.2\5.3\msvc2013\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ChangeParentCommand.cpp Component.cpp ComponentFactory.cpp Composite.cpp DeleteComponentCommand.cpp EditComponentCommand.cpp GUIPresentationModel.cpp GUIView.cpp GeneratedFiles\Debug\moc_GUIPresentationModel.cpp GeneratedFiles\Debug\moc_GUIView.cpp InsertAChildNodeCmd.cpp InsertAParentNodeCmd.cpp InsertASiblingNodeCmd.cpp MindMapModel.cpp Node.cpp NodeOperation.cpp PainterWidgt.cpp PresentationModel.cpp Root.cpp TextView.cpp main.cpp
+         ChangeParentCommand.cpp
+         Component.cpp
+         ComponentFactory.cpp
+         Composite.cpp
+         DeleteComponentCommand.cpp
+         EditComponentCommand.cpp
+         GUIPresentationModel.cpp
          GUIView.cpp
+         moc_GUIPresentationModel.cpp
+         moc_GUIView.cpp
+         InsertAChildNodeCmd.cpp
+         InsertAParentNodeCmd.cpp
+         InsertASiblingNodeCmd.cpp
+         MindMapModel.cpp
+         Node.cpp
+         NodeOperation.cpp
+         PainterWidgt.cpp
+         PresentationModel.cpp
+         Root.cpp
+         TextView.cpp
+         正在產生程式碼...
+     1>c:\users\oil\documents\github\qtproject\qtproject\qtproject\mindmapmodel.cpp(145): warning C4715: 'MindMapModel::findTargetNode' : 不是所有控制路徑都傳回值
+     1>c:\users\oil\documents\github\qtproject\qtproject\qtproject\mindmapmodel.cpp(366): warning C4715: 'MindMapModel::getNodeInList' : 不是所有控制路徑都傳回值
+     1>c:\users\oil\documents\github\qtproject\qtproject\qtproject\guipresentationmodel.cpp(61): warning C4700: 使用了未初始化的區域變數 'isOK'
+         正在編譯...
+         main.cpp
+         正在產生程式碼...
        Link:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\oil\Documents\GitHub\QTProject\QTProject\Win32\Debug\\QTProject.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.3.2\5.3\msvc2013\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\oil\Documents\GitHub\QTProject\QTProject\Win32\Debug\QTProject.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\oil\Documents\GitHub\QTProject\QTProject\Win32\Debug\QTProject.lib" /MACHINE:X86 /SAFESEH Debug\ChangeParentCommand.obj
          Debug\Command.obj
@@ -30,9 +56,14 @@
          Debug\qtproject.obj
          Debug\Root.obj
          Debug\TextView.obj
+     1>qtproject.obj : warning LNK4099: 找不到 PDB 'vc120.pdb' (有 'qtproject.obj' 或位於 'C:\Users\oil\Documents\GitHub\QTProject\QTProject\Win32\Debug\vc120.pdb')，當做沒有偵錯資訊，連結物件
+     1>qrc_qtproject.obj : warning LNK4099: 找不到 PDB 'vc120.pdb' (有 'qrc_qtproject.obj' 或位於 'C:\Users\oil\Documents\GitHub\QTProject\QTProject\Win32\Debug\vc120.pdb')，當做沒有偵錯資訊，連結物件
+     1>moc_qtproject.obj : warning LNK4099: 找不到 PDB 'vc120.pdb' (有 'moc_qtproject.obj' 或位於 'C:\Users\oil\Documents\GitHub\QTProject\QTProject\Win32\Debug\vc120.pdb')，當做沒有偵錯資訊，連結物件
+     1>CommandManager.obj : warning LNK4099: 找不到 PDB 'vc120.pdb' (有 'CommandManager.obj' 或位於 'C:\Users\oil\Documents\GitHub\QTProject\QTProject\Win32\Debug\vc120.pdb')，當做沒有偵錯資訊，連結物件
+     1>Command.obj : warning LNK4099: 找不到 PDB 'vc120.pdb' (有 'Command.obj' 或位於 'C:\Users\oil\Documents\GitHub\QTProject\QTProject\Win32\Debug\vc120.pdb')，當做沒有偵錯資訊，連結物件
          QTProject.vcxproj -> C:\Users\oil\Documents\GitHub\QTProject\QTProject\Win32\Debug\QTProject.exe
      1>專案 "C:\Users\oil\Documents\GitHub\QTProject\QTProject\QTProject\QTProject.vcxproj" (Build 目標) 建置完成。
 
 建置成功。
 
-經過時間 00:00:02.06
+經過時間 00:00:23.54

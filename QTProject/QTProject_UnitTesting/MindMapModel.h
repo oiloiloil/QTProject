@@ -19,10 +19,12 @@ class MindMapModel
 {
 private:
 	Component *root;
+	
 	ComponentFactory factory;
 	CommandManager cmdManager;
 	Command *cmd;
 public:
+	Component *clone;
 	bool checkRootExist();
 	Component* returnRoot();
 	void createMinMap(string description);
@@ -61,5 +63,5 @@ public:
 
 	void cutNode();
 	void copyNode(int nodeID);
-	void pasteNode();
+	void pasteNode(int nodeID);
 };

@@ -13,6 +13,7 @@ private:
 	int ID;
 	Component *parent;
 public:
+	//Node(const Node&);
 	Node(string newDes, int newID);
 	int getID();
 	string getDescription();
@@ -21,5 +22,5 @@ public:
 	void addSibling(Component *node);
 	Component* getParent();
 	void display();
-	Component* clone();
+	virtual Component* clone();
 };

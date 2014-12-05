@@ -152,7 +152,11 @@ TEST_F(MindMapModel_Test, copyTest)
 {
 	mapModel.createMinMap("root");
 	mapModel.insertChildNode(0, 1, "child");
+	EXPECT_EQ(1, mapModel.getGreatID());
 	mapModel.copyNode(1);
+	mapModel.clone->setID(2);
+	EXPECT_EQ(2, mapModel.clone->getID());
+
 }
 
 TEST_F(MindMapModel_Test, pasteTest)

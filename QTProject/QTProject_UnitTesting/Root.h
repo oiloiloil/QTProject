@@ -11,6 +11,7 @@ private:
 	string description;
 	int ID;
 public:
+	//Root(const Root&);
 	Root(string newDes, int newID);
 	int getID();
 	string getDescription();
@@ -18,5 +19,5 @@ public:
 	void addParent(Component *node);
 	void addSibling(Component *node);
 	void display();
-	Component* clone();
+	virtual Component* clone();
 };

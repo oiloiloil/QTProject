@@ -2,9 +2,6 @@ c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesti
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\vc120.pdb
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\vc120.idb
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\stdafx.obj
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\changeparentcommand.obj
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\command.obj
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\component.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\componentfactory.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\composite.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\deletecomponentcommand.obj
@@ -12,25 +9,62 @@ c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesti
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\insertachildnodecmd.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\insertaparentnodecmd.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\insertasiblingnodecmd.obj
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\node.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\root.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\cmdmanager_test.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\commandmanager.obj
+c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\factorytest.obj
+c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\integrationtest.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\mindmapmodel.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\mindmapmodel_test.obj
+c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\node.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\nodeoperation.obj
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\qtproject_unittesting.obj
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\factorytest.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\nodeoperationtest.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\nodetest.obj
+c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\qtproject_unittesting.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\roottest.obj
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\integrationtest.obj
+c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\changeparentcommand.obj
+c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\command.obj
+c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\component.obj
+c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\intergrationtest.obj
+c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\settestdata.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\qtproject_unittesting.pch
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\vc120.pdb
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\vc120.idb
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\stdafx.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\composite.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\deletecomponentcommand.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\editcomponentcommand.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\insertachildnodecmd.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\insertaparentnodecmd.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\insertasiblingnodecmd.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\root.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\cmdmanager_test.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\commandmanager.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\factorytest.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\intergrationtest.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\mindmapmodel.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\mindmapmodel_test.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\node.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\nodeoperation.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\nodeoperationtest.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\nodetest.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\qtproject_unittesting.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\roottest.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\settestdata.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\changeparentcommand.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\command.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\component.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\componentfactory.obj
 c:\users\oil\documents\visual studio 2013\projects\qtproject\debug\qtproject_unittesting.ilk
 c:\users\oil\documents\visual studio 2013\projects\qtproject\debug\qtproject_unittesting.exe
 c:\users\oil\documents\visual studio 2013\projects\qtproject\debug\qtproject_unittesting.pdb
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\cl.command.1.tlog
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\cl.read.1.tlog
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\cl.write.1.tlog
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\link.command.1.tlog
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\link.read.1.tlog
-c:\users\oil\documents\visual studio 2013\projects\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\link.write.1.tlog
+c:\users\oil\documents\github\qtproject\qtproject\debug\qtproject_unittesting.ilk
+c:\users\oil\documents\github\qtproject\qtproject\debug\qtproject_unittesting.exe
+c:\users\oil\documents\github\qtproject\qtproject\debug\qtproject_unittesting.pdb
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\integrationtest.obj
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\cl.command.1.tlog
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\cl.read.1.tlog
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\cl.write.1.tlog
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\link.command.1.tlog
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\link.read.1.tlog
+c:\users\oil\documents\github\qtproject\qtproject\qtproject_unittesting\debug\qtprojec.0c6ca1b1.tlog\link.write.1.tlog

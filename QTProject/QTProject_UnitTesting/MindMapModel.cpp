@@ -437,13 +437,39 @@ void MindMapModel::cutNode()
 
 void MindMapModel::copyNode(int nodeID)
 {
+	cout << "copy action" << endl;
+	list<Component *>tempList;
+	list<Component *>resultList;
+	list <Component *>::iterator i;
+	Component *temp;
 	Component *node = findTargetNode(nodeID, root);
-	Component *clone = node->clone();
-	cout << clone->getDescription();
+	int greatID = getGreatID();
 
+	clone = node->clone();
+	greatID = greatID + 1;
+	clone->setID(greatID);
+	tempList = clone->getNodeList();
+	getNodeList(tempList, resultList);
+	for (i = tempList.begin(); i != tempList.end(); ++i)
+	{
+		greatID = greatID + 1;
+		temp = *i;
+		temp->setID(greatID);
+	}
 }
 
-void MindMapModel::pasteNode()
+void MindMapModel::pasteNode(int nodeID)
 {
+	try
+	{
+		if (clone == NULL)
+			throw "沒有複製/剪下的node";
+		Component *node = findTargetNode(nodeID, root);
+		node->addChild(clone);
 
+	}
+	catch (string err)
+	{
+		cout << err << endl;
+	}
 }
