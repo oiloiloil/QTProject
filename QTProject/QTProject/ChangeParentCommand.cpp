@@ -5,6 +5,7 @@ using namespace std;
 
 ChangeParentCommand::ChangeParentCommand(Component *oriNode, Component *oldParent, Component *newParent)
 {
+	// test git commit
 	this->oriNode = oriNode;
 	this->newParent = newParent;
 	this->oldParent = oldParent;
